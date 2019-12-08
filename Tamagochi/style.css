@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.container{
+  width: 60%;
+  margin: 100px auto;
+}
+.chooseLevel{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.image{
+  background-image: url("dog.png");
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}

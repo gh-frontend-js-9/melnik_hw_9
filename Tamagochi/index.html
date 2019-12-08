@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamagochi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="chooseLevel" id="chooseLevel">
+      <div class="container">
+        <h2>Choose Level:</h2>
+        <div>
+          <button onclick="setLevel('pug')">Pug</button>
+          <button onclick="setLevel('cat')">Cat</button>
+          <button onclick="setLevel('ninja')">Ninja</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="image"></div>
+        <div class="params">
+          <p>Food:
+            <meter id="foodB" value="0" min="0" max="100"></meter>
+            <span id="food">0</span></p>
+          <p>Clean:
+            <meter id="cleanB" value="0" min="0" max="100"></meter>
+            <span id="clean">0</span></p>
+          <p>Happiness:
+             <meter id="happinessB" value="0" min="0" max="100"></meter>
+             <span id="happiness">0</span></p>
+          <p>Health:
+             <meter id="healthB" value="0" min="0" max="100"></meter>
+             <span id="health">0</span></p>
+          <p>Socialization:
+             <meter id="socializationB" value="0" min="0" max="100"></meter>
+             <span id="socialization">0</span></p>
+          <p>Money:
+             <meter id="moneyB" value="0" min="0" max="100"></meter>
+             <span id="money">0</span></p>
+          <p>Time: <span id="time"></span></p>
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="Melnik.eat()">Food</button>
+          <button type="button" onclick="Melnik.wash()">Clean</button>
+          <button type="button" onclick="Melnik.run()">Run</button>
+          <button type="button" onclick="Melnik.visitDoctor()">Visit Doctor</button>
+          <button type="button" onclick="Melnik.goToBar()">Go Bar</button>
+          <button type="button" onclick="Melnik.goToWork()">Work</button>
+          <button type="button" onclick="Melnik.buyFood()">Buy Food</button>
+          <button type="button" onclick="Melnik.startBusiness()">Start Business</button>
+        </div>
+        <br>
+        <button type="button" onclick="Melnik.initStats()">Start</button>
+        <button type="button" onclick="document.location.reload(true)">Reset</button>
+
+    </div>
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
